@@ -10,7 +10,7 @@ const WeatherComponent = () => {
   const [unit, setUnit] = useState('metric'); 
   const [showForecast, setShowForecast] = useState(false);
 
-  const API_KEY = '5e60fafe89e767af7b9244b4993c50ce';
+  const API_KEY = process.env.REACT_APP_API_KEY;
   const CURRENT_WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${unit}&appid=${API_KEY}`;
   const FORECAST_API_URL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${unit}&appid=${API_KEY}`;
 
