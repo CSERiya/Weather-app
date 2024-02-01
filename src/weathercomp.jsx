@@ -166,5 +166,5 @@ const WeatherComponent = () => {
     </div>
   );
 };
-
+ 
 export default WeatherComponent;
